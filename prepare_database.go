@@ -25,7 +25,6 @@ func defaultInitDatabase(binaryExtractLocation, runtimePath, pgDataDir, username
 	args := []string{
 		"-A", "password",
 		"-U", username,
-		"--debug",
 		"-D", pgDataDir,
 		fmt.Sprintf("--pwfile=%s", passwordFile),
 	}
